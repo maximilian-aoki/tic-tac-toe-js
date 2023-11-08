@@ -6,9 +6,51 @@
   <title>Maxy Tic Tac Toe</title>
   <link rel="stylesheet" href="./static/css/reset.css">
   <link rel="stylesheet" href="./static/css/style.css">
-  <script src="./main.js" defer></script>
+  <script src="./js/events.js" defer></script>
+  <!-- <script src="./main.js" defer></script> -->
 </head>
-<body>
-  
+<body class="grid">
+
+  <div class="header grid"><h1>TIC-TAC-TOE</h1></div>
+
+  <div class="playset grid">
+    <label for="player1">Player 1:</label>
+    <input type="text" name="player1" id="player1" maxlength="16">
+    <label for="player2">Player 2:</label>
+    <input type="text" name="player2" id="player2">
+    <button type="button" class="start-game">START GAME</button>
+  </div>
+
+  <div class="control grid">
+    <div class="profile one">
+      <h3>X</h3>
+      <h4 class="name one">Player 1</h4>
+      <p>total wins: <span class="wins one">x</span></p>
+    </div>
+    <div class="vs grid"><p>VS..</p></div>
+    <div class="profile two">
+      <h3>O</h3>
+      <h4 class="name two">Player 2</h4>
+      <p>total wins: <span class="wins two">x</span></p>
+    </div>
+  </div>
+
+  <div class="game grid">
+    <div data-pos="00"></div>
+    <div data-pos="01"></div>
+    <div data-pos="02"></div>
+    <div data-pos="10"></div>
+    <div data-pos="11"></div>
+    <div data-pos="12"></div>
+    <div data-pos="20"></div>
+    <div data-pos="21"></div>
+    <div data-pos="22"></div>
+  </div>
+
+  <div class="dialog grid"><p class="message-generator">👑 This is a sample message! 👑</p></div>
+  <div class="again flex">
+    <button type="button" class="rematch">REMATCH</button>
+    <button type="button" class="reset">RESET</button>
+  </div>
 </body>
 </html>

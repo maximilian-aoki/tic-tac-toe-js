@@ -6,8 +6,10 @@
   <title>Maxy Tic Tac Toe</title>
   <link rel="stylesheet" href="./static/css/reset.css">
   <link rel="stylesheet" href="./static/css/style.css">
+  <!-- ADD MODULES HERE -->
   <script src="./js/events.js" defer></script>
-  <!-- <script src="./main.js" defer></script> -->
+  <script src="./js/ui.js" defer></script>
+  <script src="./js/controller.js" defer></script>
 </head>
 <body class="grid">
 
@@ -24,14 +26,14 @@
   <div class="control grid">
     <div class="profile one">
       <h3>X</h3>
-      <h4 class="name one">Player 1</h4>
-      <p>total wins: <span class="wins one">x</span></p>
+      <h4 class="name one">---</h4>
+      <p>total wins: <span class="wins one">-</span></p>
     </div>
     <div class="vs grid"><p>VS..</p></div>
     <div class="profile two">
       <h3>O</h3>
-      <h4 class="name two">Player 2</h4>
-      <p>total wins: <span class="wins two">x</span></p>
+      <h4 class="name two">---</h4>
+      <p>total wins: <span class="wins two">-</span></p>
     </div>
   </div>
 
@@ -47,7 +49,7 @@
     <div data-pos="22"></div>
   </div>
 
-  <div class="dialog grid"><p class="message-generator">👑 This is a sample message! 👑</p></div>
+  <div class="dialog grid"><p class="message-generator">🙏 Give yourselves some names! 🙏</p></div>
   <div class="again flex">
     <button type="button" class="rematch">REMATCH</button>
     <button type="button" class="reset">RESET</button>

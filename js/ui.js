@@ -181,7 +181,7 @@ let Dialog = (function() {
 
   // module-specific functions
   function newGame() {
-    dialog.textContent = '🛡️ May the best Tic-Tac-Toer win... 🛡️'
+    dialog.textContent = `🛡️ May the best Tic-Tac-Toer win... 🛡️`;
   }
 
   function resetGame() {
@@ -189,7 +189,7 @@ let Dialog = (function() {
   }
 
   function rematch() {
-    dialog.textContent = '🥊 New round... FIGHT 🥊'
+    dialog.textContent = `🥊 New round... FIGHT! 🥊`;
   }
 
   function gameOver(player) {
@@ -201,7 +201,7 @@ let Dialog = (function() {
   }
 
   function playMove() {
-    dialog.textContent = '🤔 Interesting move... 🤔'
+    dialog.textContent = '🤔 Interesting move... 🤔';
   }
 
   function error(msg) {
